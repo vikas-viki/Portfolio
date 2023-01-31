@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+}
+body {
+    background: linear-gradient(130.9deg, #A6FAE1 26.79%, rgba(139, 240, 246, 0.88) 53.4%, #AFE8CC 72.31%, rgba(166, 249, 224, 0.85) 93.67%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  
