@@ -8,13 +8,7 @@
   flex-direction: column;
   user-select: none;
 }
-.projects-head {
-  font-family: "Catamaran", sans-serif;
-  letter-spacing: 2px;
-  text-align: center;
-  font-size: 40px;
-  width: 100%;
-}
+
 
 .project-cards{
   margin-top: 40px;

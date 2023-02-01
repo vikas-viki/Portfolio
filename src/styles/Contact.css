@@ -10,11 +10,11 @@
   user-select: none;
   margin-bottom: 100px;
 }
-.contact-head {
+.section-head {
   font-family: "Catamaran", sans-serif;
   letter-spacing: 2px;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.7rem;
   width: 100%;
 }
 
@@ -38,7 +38,7 @@
 .social-head{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.7rem;
 }
 
 .handle-links{
@@ -64,7 +64,7 @@
     width: 80%;
     word-wrap: break-word;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 1.3rem;
     opacity: 0.45;
 }
 .btn-donate {
@@ -72,9 +72,9 @@
     --btn-bg-1: hsla(194 100% 69% / 1);
     --btn-bg-2: hsla(217 100% 56% / 1);
     --btn-bg-color: hsla(360 100% 100% / 1);
-    --radii: 0.5em;
+    --radii: 0.5rem;
     cursor: pointer;
-    padding: 0.9em 1.4em;
+    padding: 0.9em 1.4rem;
     margin-top: 10px;
     width: 180px;
     margin-left: 30px;
@@ -114,4 +114,23 @@
     text-decoration: none;
     width: 180px;
     color: #fff;
+    text-align: center;
+  }
+
+  @media (width <= 1100px){
+    .contact-info{
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 60px;
+      padding-left: 50px;
+      padding-right: 50px;
+      align-items: center;
+  }
+  .youtube-desc{
+    width: 100%;
+}
   }

@@ -66,7 +66,7 @@ const Skills = () => {
     ]
     return (
         <div id='skills' className='skills' >
-            <span className='skills-head sec-head'>Skills</span>
+            <span className='skills-head section-head sec-head'>Skills</span>
             <div class="skill-cards">
                 {
                     skills.map((skill, index) => {

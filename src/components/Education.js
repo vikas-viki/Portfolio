@@ -54,7 +54,7 @@ const Education = () => {
     ]
     return (
         <div id='education' className='educations' >
-            <span className='education-head sec-head'>Education</span>
+            <span className='education-head section-head sec-head'>Education</span>
             <div className='school-education'>
                 <div className='degree' data-aos='fade-right'>
                     <span>

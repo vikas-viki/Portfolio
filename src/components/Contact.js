@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import "../styles/Contact.css"
 import profile from "../assets/profile.png"
 import linkedin from "../assets/linkedin.png"
@@ -9,12 +9,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 
 const Contact = () => {
-    useEffect(()=>{
-        AOS.init({duration: 1900});
-    },[]);
+    useEffect(() => {
+        AOS.init({ duration: 1900 });
+    }, []);
     return (
         <div id='contact' className='contacts'>
-            <span className='contact-head sec-head'>Contact Me</span>
+            <span className='contact-head section-head sec-head'>Contact Me</span>
             <div className='contact-info'>
                 <span data-aos='flip-right'>
                     <img src={profile} alt="profile" className='profile-img' height='500' />
@@ -34,11 +34,13 @@ const Contact = () => {
                         <span className='youtube-desc'>
                             To create a community where everyone can solve their problems in building Web apps and for developing personal communication.
                         </span>
-                        <a href='https://www.youtube.com/@webdevsolutions' target='_blank' className='youtube-button' >
-                            <button class="btn-donate">
-                                Visit Youtube
-                            </button>
-                        </a>
+                        <span>
+                            <a href='https://www.youtube.com/@webdevsolutions' target='_blank' className='youtube-button' >
+                                <button class="btn-donate">
+                                    Visit Youtube
+                                </button>
+                            </a>
+                        </span>
                     </span>
                     <span>
                         <span className='social-head '>Contact number <span className='contact-num'>+91 9741787607</span></span>

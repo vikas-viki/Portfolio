@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
         <div className='navabar' data-aos='fade-down'>
-            <h3 className='name'>Vikas kotari</h3>
+            <h3 className='name'>Vikas kotary</h3>
             <ul className='navs'>
                 <li className='menu-item'><a href="#">Home</a></li>
                 <li className='menu-item'><a href="#skills">Skills</a></li>

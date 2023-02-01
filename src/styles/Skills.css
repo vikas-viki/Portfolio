@@ -8,13 +8,6 @@
   flex-direction: column;
   user-select: none;
 }
-.skills-head {
-  font-family: "Catamaran", sans-serif;
-  letter-spacing: 2px;
-  text-align: center;
-  font-size: 40px;
-  width: 100%;
-}
 
 .skill-cards{
     margin-top: 50px;

@@ -51,7 +51,7 @@ const Projects = () => {
     },[]);
     return (
         <div id='projects' className='projects' >
-            <span className='projects-head sec-head'>Projects</span>
+            <span className='projects-head section-head sec-head'>Projects</span>
             <div className='project-cards'>
                 {   
                     projects.map((project, index) => {
