@@ -4,7 +4,7 @@ import hackerrank from "../assets/hackerrank.png"
 import sololearn from "../assets/sololearn.png"
 import almabetter from "../assets/almabetter.png"
 import puc from "../assets/puc.png"
-import puboard from "../assets/puboard.png"
+import puboard from "../assets/puBoard.png"
 import mangloreU from "../assets/mangloreU.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
