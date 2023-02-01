@@ -1,34 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400&family=Dosis:wght@300;400&family=Laila:wght@300;400;500&family=Montserrat:wght@300;400;500&family=Philosopher&family=Source+Code+Pro:wght@300;400&display=swap');
-.hero{
-    text-align: center;
-    padding-top: 125px;
-    user-select: none;
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400&family=Dosis:wght@300;400&family=Laila:wght@300;400;500&family=Montserrat:wght@300;400;500&family=Philosopher&family=Source+Code+Pro:wght@300;400&display=swap");
+.hero {
+  text-align: center;
+  padding-top: 125px;
+  user-select: none;
 }
 
-.im, .hii{
-    font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
+.im,
+.hii {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
 }
-.hero-name{
-    font-family: 'Laila', sans-serif;
-    font-size: 65px;
-    font-weight: 400;
-    position: relative;
-    letter-spacing: 2px;
+.hero-name {
+  font-family: "Laila", sans-serif;
+  font-size: 65px;
+  font-weight: 400;
+  position: relative;
+  letter-spacing: 2px;
 }
-.hifhen{
-    font-size: 45px;
-    position: relative;
-    top: -8px;
-    padding: 10px;
+.hifhen {
+  font-size: 45px;
+  position: relative;
+  top: -8px;
+  padding: 10px;
 }
-.hero-services{
-    font-family: 'Catamaran', sans-serif;
-    font-size: 45px;
+.hero-services {
+  font-family: "Catamaran", sans-serif;
+  font-size: 45px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-image: linear-gradient(144deg, #8608b4, #492fed 60%, #bd6fda);
 }
 
-.description{
-    font-size: 20px;
-    opacity: 0.45;
-    font-family: sans-serif;
+.description {
+  font-size: 20px;
+  opacity: 0.45;
+  font-family: sans-serif;
 }

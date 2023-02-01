@@ -32,7 +32,7 @@
 }
 
 .card {
-  --bg: #f7f7f8;
+  --bg: #ffffff;
   --hover-bg: #ffe5f4;
   --hover-text: #e50087;
   max-width: 23ch;
@@ -49,6 +49,7 @@
   justify-content: center;
   align-items: center;
   gap: 1em;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 .card__body {
@@ -61,3 +62,7 @@
   transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
 }
 
+.card:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+}

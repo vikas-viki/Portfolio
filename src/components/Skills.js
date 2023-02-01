@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "../styles/Skills.css";
 import css from "../assets/css.png"
 import mongodb from "../assets/database-storage.png"
@@ -10,9 +10,14 @@ import js from '../assets/js.png'
 import npm from  "../assets/npm.png"
 import github from "../assets/github.png"
 import redux from "../assets/redux.png"
+import solidity from "../assets/solidity.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const Skills = () => {
-
+    useEffect(()=>{
+        AOS.init({duration: 2000});
+    },[]);
     const skills = [
         {
             name: "HTML",
@@ -54,15 +59,19 @@ const Skills = () => {
             name: "GitHub",
             icon: github
         },
+        {
+            name: "Solidity",
+            icon: solidity
+        }
     ]
     return (
         <div id='skills' className='skills' >
-            <span className='skills-head'>Skills</span>
+            <span className='skills-head sec-head'>Skills</span>
             <div class="skill-cards">
                 {
                     skills.map((skill, index) => {
                         return (
-                            <div class="card" key={index}>
+                            <div class="card" data-aos='flip-left' key={index}>
                                 <div class="icon">
                                     <img src={skill.icon} alt={skill.name} width='100' />
                                 </div>

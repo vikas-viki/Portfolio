@@ -32,11 +32,12 @@
 }
 
 .education {
-  --bg: #f7f7f8;
-  --hover-bg: #ffe5f4;
+  --bg: #ffffff;
+  --hover-bg: #d3fdfc;
   --hover-text: #e50087;
   width: 23ch;
 
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   height: 216px;
   text-align: center;
   background: var(--bg);
@@ -80,6 +81,8 @@
 .education:hover {
   cursor: pointer;
   background: var(--hover-bg);
+  
+  transform: scale(1.15);
 }
 
 .education:hover > div,
@@ -92,13 +95,30 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin-top: 50px;
 }
 
 .school-education > div{
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
+    padding: 15px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    display: flex;
+    gap: 30px;
+}
+
+.score-certificate{
+  display: flex;
+  justify-content: space-between;
+}
+
+.school-education> div:hover  {
+  transition: .3s;
+  overflow: hidden;
+  transform: scale(1.05);
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
 .school-education > div > span{
@@ -108,4 +128,23 @@
 .education-time{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
+}
+
+.edu-view>a{
+  text-align: end;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-family:monospace;
+  font-size: 20px;
+  align-self: flex-end;
+}
+.edu-details{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.school-education >div > span >img{
+  padding-right: 10px;
+  border-right: 3px solid rgba(3, 102, 214, 0.8);
 }

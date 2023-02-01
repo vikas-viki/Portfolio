@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "../styles/Projects.css";
 import crypto from "../assets/crypto.png"
 import quicknotes from "../assets/quicknotes.png"
 import resumeBuilder from "../assets/resumebuilder.png"
 import news from "../assets/news.png"
 import BmyS from "../assets/BmyS.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const Projects = () => {
     const projects = [
@@ -44,14 +46,17 @@ const Projects = () => {
             link: 'https://bookmyshow-almabetter2022.netlify.app/'
         },
     ]
+    useEffect(()=>{
+        AOS.init({duration: 2000});
+    },[]);
     return (
         <div id='projects' className='projects' >
-            <span className='projects-head'>Projects</span>
+            <span className='projects-head sec-head'>Projects</span>
             <div className='project-cards'>
                 {   
                     projects.map((project, index) => {
                         return (
-                                <div class="project" key={index}>
+                                <div class="project" data-aos='zoom-in' key={index}>
                                     <div class="project-img">
                                         <img src={project.image} alt={project.title} width='400'/>
                                     </div>

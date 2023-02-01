@@ -1,13 +1,39 @@
-*{
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-    color: rgb(0, 0, 0);
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  color: rgb(0, 0, 0);
+}
+html{
+    scroll-behavior: smooth;
 }
 body {
-    background: linear-gradient(130.9deg, #A6FAE1 26.79%, rgba(139, 240, 246, 0.88) 53.4%, #AFE8CC 72.31%, rgba(166, 249, 224, 0.85) 93.67%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-  }
-  
+  background: linear-gradient(
+    130.9deg,
+    #a6fae1 26.79%,
+    rgba(139, 240, 246, 0.88) 53.4%,
+    #afe8cc 72.31%,
+    rgba(166, 249, 224, 0.85) 93.67%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+body::-webkit-scrollbar{
+    background: linear-gradient(
+        130.9deg,
+        #a6fae1 26.79%,
+        rgba(139, 240, 246, 0.88) 53.4%,
+        #afe8cc 72.31%,
+        rgba(166, 249, 224, 0.85) 93.67%
+      );
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(103, 240, 247);
+    border: 3px solid rgb(0, 225, 255);
+    border-radius: 5px;
+}
+.sec-head{
+    color: rgb(20, 148, 203);
+    font-weight: 600;
+}
