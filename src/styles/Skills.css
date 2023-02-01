@@ -36,7 +36,6 @@
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,11 +50,9 @@
   font-size: 1em;
 }
 
-.card > :not(span) {
-  transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
-}
 
 .card:hover{
   cursor: pointer;
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  transition: 0.2s!important;
 }

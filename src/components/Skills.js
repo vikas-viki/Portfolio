@@ -10,7 +10,10 @@ import js from '../assets/js.png'
 import npm from  "../assets/npm.png"
 import github from "../assets/github.png"
 import redux from "../assets/redux.png"
-import solidity from "../assets/solidity.png"
+import solidity from "../assets/solidity.png";
+import figma from "../assets/figma.png"
+import bootstrap from "../assets/bootstrap.png"
+import mui from "../assets/mui.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
@@ -36,6 +39,14 @@ const Skills = () => {
             icon: react
         },
         {
+            name: "Bootstrap",
+            icon: bootstrap
+        },
+        {
+            name: "Material UI",
+            icon: mui
+        },
+        {
             name: "Redux",
             icon: redux
         },
@@ -58,6 +69,11 @@ const Skills = () => {
         {
             name: "GitHub",
             icon: github
+        },
+        ,
+        {
+            name: "Figma",
+            icon: figma
         },
         {
             name: "Solidity",
