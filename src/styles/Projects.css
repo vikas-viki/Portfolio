@@ -9,6 +9,13 @@
   user-select: none;
 }
 
+.project-img > img{
+  border-radius: 5px;
+}
+
+.project-title{
+  letter-spacing: 1px;
+}
 
 .project-cards{
   margin-top: 40px;
@@ -42,6 +49,8 @@
   justify-content: center;
   align-items: center;
   gap: 1em;
+  height: 410px;
+  background-color: #d3fdfcc9;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 

@@ -1,7 +1,7 @@
 {
   "name": "wds-webpack",
-  "version": "1.0.2",
-  "description": "webpack app with all the requirnments for developing a react app with 2x speed.",
+  "version": "1.0.3",
+  "description": "All you need to know about me",
   "main": "index.js",
   "scripts": {
     "build": "webpack",

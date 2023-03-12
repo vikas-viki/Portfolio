@@ -13,7 +13,7 @@ const Contact = () => {
         AOS.init({ duration: 1900 });
     }, []);
     return (
-        <div id='contact' className='contacts'>
+        <section id='contact' className='contacts'>
             <span className='contact-head section-head sec-head'>Contact Me</span>
             <div className='contact-info'>
                 <span data-aos='flip-right'>
@@ -47,7 +47,7 @@ const Contact = () => {
                     </span>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

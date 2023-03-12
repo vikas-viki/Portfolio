@@ -14,6 +14,7 @@ import solidity from "../assets/solidity.png";
 import figma from "../assets/figma.png"
 import bootstrap from "../assets/bootstrap.png"
 import mui from "../assets/mui.png"
+import hardhat from "../assets/hardhat.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
@@ -22,6 +23,14 @@ const Skills = () => {
         AOS.init({duration: 2000});
     },[]);
     const skills = [
+        {
+            name: "Solidity",
+            icon: solidity
+        },
+        {
+            name: "Hardhat",
+            icon: hardhat
+        },
         {
             name: "HTML",
             icon: html
@@ -74,14 +83,10 @@ const Skills = () => {
         {
             name: "Figma",
             icon: figma
-        },
-        {
-            name: "Solidity",
-            icon: solidity
         }
     ]
     return (
-        <div id='skills' className='skills' >
+        <section id='skills' className='skills' >
             <span className='skills-head section-head sec-head'>Skills</span>
             <div class="skill-cards">
                 {
@@ -97,7 +102,7 @@ const Skills = () => {
                     })
                 }
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -62,10 +62,12 @@
 .youtube-desc{
     padding-left: 30px;
     width: 80%;
+    letter-spacing: 0.8px;
+    word-spacing: 2px;
     word-wrap: break-word;
     font-family: sans-serif;
     font-size: 1.3rem;
-    opacity: 0.45;
+    opacity: 0.6;
 }
 .btn-donate {
     --clr-font-main: hsla(0 0% 20% / 100);
@@ -87,7 +89,7 @@
     border: none;
     border-radius: var(--radii);
     color: var(--btn-bg-color);
-    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
   
   .btn-donate:hover {
