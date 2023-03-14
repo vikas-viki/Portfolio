@@ -24,7 +24,7 @@ const Contact = () => {
                         <span className='social-head' >Social media</span>
                         <div className='handle-links'>
                             <a href='https://www.linkedin.com/in/vikas-kotari-6a0918240/' target='_blank'><img src={linkedin} alt='linkedin' width='30' /></a>
-                            <a href='https://github.com/vikas-viki' target='_blank'><img src={github} alt='github' width='30' /></a>
+                            <a href='https://github.com/vikas-viki' target='_blank' ><img src={github} alt='github' style={{backgroundColor: '#fff', borderRadius: '2px'}} width='30' /></a>
                             <a href="mailto:vikaskotary001@gmail.com" ><img src={google} alt='google' width='30' /></a>
                             <a href="https://www.youtube.com/@webdevsolutions" traget='_blank' ><img src={youtube} alt='youtube' width='30' /></a>
                         </div>
@@ -43,7 +43,7 @@ const Contact = () => {
                         </span>
                     </span>
                     <span>
-                        <span className='social-head '>Contact number <span className='contact-num'>+91 9741787607</span></span>
+                        <span className='social-head '>Contact number: <span className='contact-num'>+91 9741787607</span></span>
                     </span>
                 </div>
             </div>

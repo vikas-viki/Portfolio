@@ -8,15 +8,15 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #002E64;
+  background: #080020;
   height: 100%;
 }
 body::-webkit-scrollbar {
-  background-color: #002E64;
+  background-color: #080020;
 }
 body::-webkit-scrollbar-thumb {
-  background: rgb(103, 240, 247);
-  border: 3px solid rgb(0, 225, 255);
+  background: #00abd1;
+  /* border: 2px solid #00ffbf; */
   border-radius: 5px;
 }
 .sec-head {
