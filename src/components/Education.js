@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import "../styles/Education.css";
 import hackerrank from "../assets/hackerrank.png"
 import sololearn from "../assets/sololearn.png"
@@ -10,9 +10,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 
 const Education = () => {
-    useEffect(()=>{
-        AOS.init({duration: 1800});
-    },[]);
+    useEffect(() => {
+        AOS.init({ duration: 1800 });
+    }, []);
     const education = [
 
 
@@ -51,42 +51,107 @@ const Education = () => {
             image: hackerrank,
             link: 'https://www.hackerrank.com/certificates/902c006d1243'
         },
-    ]
+    ];
+
+    // const CLG = [
+    //     {
+    //         CourseTitle: 'Bachelors of Computer Application.',
+    //         CollegeTitle: 'Manglore University',
+    //         UniversityImage: mangloreU,
+    //         description: [
+    //             "Filled learning of several programming languages including JAVA, C, python and more..",
+    //             "Included implementation of learnings into problem solving.",
+    //             "Completely enjoyable moments along with learning."
+    //         ],
+    //         marks_certificate: [
+    //             "Present", "Present"
+    //         ]
+    //     },
+    //     {
+    //         CourseTitle: 'II Pre University Course',
+    //         CollegeTitle: 'Banglore University',
+    //         UniversityImage: puboard,
+    //         description: [
+    //             "Filled learning of theoretical aspects such as Business Economics and Accountancy.",
+    //             "Learnt C++ programming & used it for problem solving.",
+    //             "Lot of enjoyment while experimenting with HTML and CSS.",
+    //         ],
+    //         marks_certificate: [
+    //             "97%", ""
+    //         ]
+    //     }
+    // ]
+    const CLG = [
+        {
+        CourseTitle: 'Bachelor of Computer Applications',
+        CollegeTitle: 'Mangalore University',
+        UniversityImage: mangloreU,
+        description: [
+        "Comprehensive learning of several programming languages including Java, C, Python, and more.",
+        "Practical implementation of learned concepts into problem solving.",
+        "Enjoyable moments alongside learning.",
+        ],
+        marks_certificate: [
+        "Present", "Present"
+        ]
+        },
+        {
+        CourseTitle: 'II Pre-University Course',
+        CollegeTitle: 'Bangalore University',
+        UniversityImage: puboard,
+        description: [
+        "Thorough understanding of theoretical aspects such as Business Economics and Accountancy.",
+        "Acquired proficiency in C++ programming and applied it to problem solving.",
+        "Experimented with HTML and CSS, resulting in enjoyable experiences.",
+        ],
+        marks_certificate: [
+        "97%", ""
+        ]
+        }
+        ]
+
     return (
         <section id='education' className='educations' >
             <span className='education-head section-head sec-head'>Education</span>
             <div className='school-education'>
-                <div className='degree' data-aos='fade-right'>
-                    <span>
-                        <img src={mangloreU} width='100' alt="Manglore University" />
-                    </span>
-                    <span className='edu-details'>
-                        <span className='education-title'>BCA - Manglore University <span className='education-time'>(2022 - Present)</span></span>
-                        <span className='score-certificate'>
-                            <span className='score'>Score: CGPA() </span>
-                            {/* <span className='edu-view' >View</span> */}
-                        </span>
-                    </span>
-                </div>
-                <div className='puc' data-aos='fade-right'>
-                    <span>
-                        <img src={puboard} width='107' alt="PU" />
-                    </span>
-                    <span className='edu-details'>
-                        <span className='education-title'>PU - Banglore board <span className='education-time'>(2020 - 2022)</span></span>
-                        <span className='score-certificate'>
-                            <span className='score' >Score: 97%</span>
-                            <span className='edu-view' ><a href={puc} target='_blank' >View</a></span>
-                        </span>
-                    </span>
-                </div>
+                {
+                    CLG.map((el, i) => {
+                        return (
+                            <div key={i} className='clg-main'>
+                                <div className='clg-header'>
+                                    <div className='clg-image'>
+                                        <img src={el.UniversityImage} alt='image' width={100} />
+                                    </div>
+                                    <div className='header-details'>
+                                        <span className='course-title'>{el.CourseTitle}</span>
+                                        <div className='course-details'>
+                                            <div className='marks-certificate'>
+                                                <span className='clg-marks'>Marks: {el.marks_certificate[0]}</span>
+                                                <span className='clg-certificate'><a href={el.marks_certificate[1]} target='_blank'>{el.marks_certificate[1] !== "Present" ? 'View Certificate' : 'Present'}</a></span>
+                                            </div>
+                                            <span className='clg-university'>- {el.CollegeTitle}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='clg-body'>
+                                    <ul className='clg-body-list'>
+                                        {el.description.map((el, i) => {
+                                            return <li key={i} className='clg-body-item'>{el}</li>
+                                        })
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
             </div>
-            <div class="education-cards">
+            <div className="education-cards">
                 {
                     education.map((education, index) => {
                         return (
-                            <div class="education" data-aos='fade-left' key={index}>
-                                <div class="education-img">
+                            <div className="education" data-aos='fade-left' key={index}>
+                                <div className="education-img">
                                     <img src={education.image} alt={education.title} width='100' style={{ borderRadius: '5px' }} />
                                 </div>
                                 <strong className='education-title'> {education.title} </strong>
@@ -96,7 +161,7 @@ const Education = () => {
                     })
                 }
             </div>
-        </section>
+        </section >
     )
 }
 

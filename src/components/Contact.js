@@ -36,7 +36,7 @@ const Contact = () => {
                         </span>
                         <span>
                             <a href='https://www.youtube.com/@webdevsolutions' target='_blank' className='youtube-button' >
-                                <button class="btn-donate">
+                                <button className="btn-donate">
                                     Visit Youtube
                                 </button>
                             </a>

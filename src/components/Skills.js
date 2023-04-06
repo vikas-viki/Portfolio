@@ -89,12 +89,12 @@ const Skills = () => {
     return (
         <section id='skills' className='skills' >
             <span className='skills-head section-head sec-head'>Skills</span>
-            <div class="skill-cards">
+            <div className="skill-cards">
                 {
                     skills.map((skill, index) => {
                         return (
-                            <div class="card" data-aos='flip-left' key={index}>
-                                <div class="icon">
+                            <div className="card" data-aos='flip-left' key={index}>
+                                <div className="icon">
                                     <img src={skill.icon} alt={skill.name} width='100'  />
                                 </div>
                                 <strong className='skill-name'> {skill.name} </strong>

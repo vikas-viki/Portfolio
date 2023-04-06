@@ -25,7 +25,7 @@
 }
 
 .card {
-  --bg: #ffffff;
+  --bg: rgba(255, 255, 255, 0.88);
   --hover-bg: #ffe5f4;
   --hover-text: #e50087;
   max-width: 23ch;
