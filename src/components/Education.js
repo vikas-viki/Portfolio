@@ -105,7 +105,7 @@ const Education = () => {
         "Experimented with HTML and CSS, resulting in enjoyable experiences.",
         ],
         marks_certificate: [
-        "97%", ""
+        "97%", puc
         ]
         }
         ]
