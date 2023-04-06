@@ -68,11 +68,10 @@
 }
 
 .project-description {
-  color: #464853;
+  color: #1b1b1c;
   line-height: 1.5em;
-  font-size: 1.05em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.18em;
+  font-family: Calibri;
 }
 
 .project > :not(span) {
@@ -82,9 +81,8 @@
 .project > strong {
   display: block;
   font-size: 1.4rem;
-
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  letter-spacing: -0.035em;
+  font-family: Calibri;
+  letter-spacing: 0.01em;
 }
 
 .project span {
