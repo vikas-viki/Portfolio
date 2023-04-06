@@ -73,7 +73,10 @@ const Projects = () => {
                                     <div class="project-description">
                                         {project.description}
                                     </div>
-                                    <span className='link'><a href={project.link} target='_blank' >See live</a></span>
+                                    <span className='link'>
+                                        <a href={project.link} target='_blank' >See live</a>
+                                        <a href={project.link} target='_blank' >GitHub Repo</a>
+                                    </span>
                                 </div>
                         )
                     })

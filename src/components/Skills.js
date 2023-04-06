@@ -17,12 +17,17 @@ import mui from "../assets/mui.png"
 import hardhat from "../assets/hardhat.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import ethersjs from "../assets/ethersjs.png"
 
 const Skills = () => {
     useEffect(()=>{
         AOS.init({duration: 2000});
     },[]);
     const skills = [
+        {
+            name: "Ethers JS",
+            icon: ethersjs
+        },
         {
             name: "Solidity",
             icon: solidity
@@ -50,10 +55,6 @@ const Skills = () => {
         {
             name: "Bootstrap",
             icon: bootstrap
-        },
-        {
-            name: "Material UI",
-            icon: mui
         },
         {
             name: "Redux",
@@ -94,7 +95,7 @@ const Skills = () => {
                         return (
                             <div class="card" data-aos='flip-left' key={index}>
                                 <div class="icon">
-                                    <img src={skill.icon} alt={skill.name} width='100' />
+                                    <img src={skill.icon} alt={skill.name} width='100'  />
                                 </div>
                                 <strong className='skill-name'> {skill.name} </strong>
                             </div>

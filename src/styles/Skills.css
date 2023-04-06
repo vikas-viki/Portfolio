@@ -9,19 +9,19 @@
   user-select: none;
 }
 
-.skill-cards{
-    margin-top: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
+.skill-cards {
+  margin-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
-.skill-name{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+.skill-name {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
 }
 
 .card {
@@ -38,10 +38,12 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 1em;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  min-height: 200px;
 }
 
 .card__body {
@@ -50,9 +52,8 @@
   font-size: 1em;
 }
 
-
-.card:hover{
+.card:hover {
   cursor: pointer;
   transform: translateY(-10px);
-  transition: 0.2s!important;
+  transition: 0.2s !important;
 }

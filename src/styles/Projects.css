@@ -26,10 +26,21 @@
   flex-wrap: wrap;
 }
 
-.link{
+.link {
+  display: flex;
+  gap: 15px;
+}
+
+.link > a{
+  color: #3c48e7;
+  letter-spacing: 0.5px;
+  padding: 7px;
+  border-radius: 6px;
+  background-color: rgb(0, 174, 255);
   text-decoration: none;
   font-family: sans-serif;
 }
+
 
 .project {
   --bg: #ffffff;
