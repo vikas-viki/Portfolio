@@ -68,8 +68,8 @@
     letter-spacing: 0.5px;
     word-spacing: 2px;
     word-wrap: break-word;
-    font-family: sans-serif;
-    font-size: 1.3rem;
+    font-family: Calibri;
+    font-size: 1.35rem;
     opacity: 0.7;
     color: #ffffffce;
 }
@@ -84,8 +84,9 @@
     margin-top: 10px;
     width: 180px;
     margin-left: 30px;
-    font-size: var(--size, 1rem);
+    font-size: var(--size, 1.02rem);
     font-family: "Segoe UI", system-ui, sans-serif;
+    letter-spacing: 0.7px;
     font-weight: 500;
     transition: 0.8s;
     background-size: 280% auto;

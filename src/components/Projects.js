@@ -23,7 +23,7 @@ const Projects = () => {
         {
             id: 6,
             title: "Pillow",
-            description: "A decentralized & automated approach to real estate transactions, eliminating intermediaries, reducing costs, increasing transparency, providing secure & efficient process.",
+            description: "Decentralized & automated approach to real estate transactions, eliminating intermediaries, reducing costs, increasing transparency & efficiency.",
             image: pillow,
             link: '',
             github: 'https://github.com/vikas-viki/Pillow'
@@ -31,7 +31,7 @@ const Projects = () => {
         {
             id: 5,
             title: "Crypto Tracer",
-            description: "In addition to providing up-to-date price information on over 200 cryptocurrencies, the dashboard is a valuable asset for investors interested in staying informed.",
+            description: "The dashboard provides real-time price data for over 200 cryptocurrencies, making it a valuable resource for investors seeking to stay informed.",
             image: crypto,
             link: 'https://tracecrypto.netlify.app/',
             github: 'https://github.com/vikas-viki/crypto-tracer-frontend'
@@ -63,7 +63,7 @@ const Projects = () => {
         {
             id: 1,
             title: "Book My Show",
-            description: "The full-stack app offers basic functionality for making API requests, retrieving data, and providing user feedback, showcasing essential components of a full-stack development.",
+            description: "The full-stack app showcases API requests, data retrieval, user feedback, and essential components of full-stack development.",
             image: BmyS,
             link: 'https://bookmyshow-almabetter2022.netlify.app/',
             github: 'https://github.com/vikas-viki/BookMyShow-frontend'
@@ -81,7 +81,7 @@ const Projects = () => {
                         return (
                                 <div className="project" data-aos='zoom-in' key={index}>
                                     <div className="project-img">
-                                        <img src={project.image} alt={project.title} width='400'/>
+                                        <img src={project.image} alt={project.title} width='400' height='212'/>
                                     </div>
                                     <strong className='project-title'> {project.title} </strong>
                                     <div className="project-description">
