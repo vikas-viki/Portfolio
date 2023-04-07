@@ -31,7 +31,7 @@ const Projects = () => {
         {
             id: 5,
             title: "Crypto Tracer",
-            description: "In addition to providing up-to-date price information on over 200 cryptocurrencies, the crypto currency price tracker dashboard is a valuable asset for investors interested in staying informed.",
+            description: "In addition to providing up-to-date price information on over 200 cryptocurrencies, the dashboard is a valuable asset for investors interested in staying informed.",
             image: crypto,
             link: 'https://tracecrypto.netlify.app/',
             github: 'https://github.com/vikas-viki/crypto-tracer-frontend'
