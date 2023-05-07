@@ -6,12 +6,21 @@ import resumeBuilder from "../assets/resumebuilder.png"
 import news from "../assets/news.png"
 import BmyS from "../assets/BmyS.png"
 import pillow from "../assets/pillow.png"
-import CrowdFunding from "../assets/crowdFunding.png"
+import CrowdFunding from "../assets/crowdFunding.png";
+import scanner from "../assets/0xscanner.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
 const Projects = () => {
     const projects = [
+        {
+            id: 8,
+            title: '0xScanner',
+            description: "Scan your blockchain address on multiple chains for balance, transactions, ERC20 tokens, NFTs & more, with standardized results.",
+            image: scanner,
+            link: 'https://0xscanner.on.fleek.co/',
+            github: 'https://github.com/vikas-viki/0xScanner'
+        },
         {
             id: 7,
             title: 'Crowd Funding',
@@ -60,6 +69,7 @@ const Projects = () => {
             link: 'https://takeshortnotes.netlify.app/',
             github: 'https://github.com/vikas-viki/iNotebook-client'
         },
+        /*
         {
             id: 1,
             title: "Book My Show",
@@ -68,6 +78,7 @@ const Projects = () => {
             link: 'https://bookmyshow-almabetter2022.netlify.app/',
             github: 'https://github.com/vikas-viki/BookMyShow-frontend'
         },
+        */
     ]
     useEffect(()=>{
         AOS.init({duration: 2000});

@@ -16,7 +16,9 @@ const Hero = () => {
                 <span className='hero-name'>Vikas kotary</span>
                 <span className='hifhen'> - </span>
                 <span className='hero-services' >Full Stack Developer</span><br />
-                <span className='description' >Passoniate about Creating Beautiful & Scalable web apps from end to end that serve a certain purpose.</span>
+                <span className='description' >Passoniate about Creating Beautiful & Scalable web apps from end to end that serve a certain purpose.
+
+                </span>
             </section>
             <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <img src={scrolldown} className='scrolldown-img' width='60' alt="down" />

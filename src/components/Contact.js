@@ -5,6 +5,7 @@ import linkedin from "../assets/linkedin.png"
 import github from "../assets/github.png"
 import google from "../assets/google.png"
 import youtube from "../assets/youtube.png"
+import resume from "../assets/resume.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
@@ -25,6 +26,7 @@ const Contact = () => {
                         <div className='handle-links'>
                             <a href='https://www.linkedin.com/in/vikas-kotari-6a0918240/' target='_blank'><img src={linkedin} alt='linkedin' width='30' /></a>
                             <a href='https://github.com/vikas-viki' target='_blank' ><img src={github} alt='github' style={{backgroundColor: '#fff', borderRadius: '2px'}} width='30' /></a>
+                            <a href="../assets/resume.pdf" target="_blank"><img src={resume} alt='resume' width='30' /></a>
                             <a href="mailto:vikaskotary001@gmail.com" ><img src={google} alt='google' width='30' /></a>
                             <a href="https://www.youtube.com/@webdevsolutions" traget='_blank' ><img src={youtube} alt='youtube' width='30' /></a>
                         </div>
