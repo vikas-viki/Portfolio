@@ -15,7 +15,7 @@ const Projects = () => {
         {
             id: 9,
             title: 'Web3 Safe Bridge',
-            description: "Web3 powered escrow platform, allows users to experience hassle free escrow transactions esuring security and transparency along with 0% fee.",
+            description: "Web3 powered escrow platform, allows users to experience hassle free escrow transactions ensuring security and transparency along with 0% fee.",
             image: web3safebridge,
             link: 'https://web3-escrow.netlify.app/',
             github: 'https://github.com/vikas-viki/Escrow2.0'
