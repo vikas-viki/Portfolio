@@ -13,17 +13,22 @@ import redux from "../assets/redux.png"
 import solidity from "../assets/solidity.png";
 import figma from "../assets/figma.png"
 import bootstrap from "../assets/bootstrap.png"
-import mui from "../assets/mui.png"
 import hardhat from "../assets/hardhat.png"
+import chainlink from "../assets/chainlink.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
-import ethersjs from "../assets/ethersjs.png"
+import ethersjs from "../assets/ethersjs.png";
+import tailwind from "../assets/tailwindcss.png"
 
 const Skills = () => {
     useEffect(()=>{
         AOS.init({duration: 2000});
     },[]);
     const skills = [
+        {
+            name: 'Chainlink Oracle',
+            icon : chainlink
+        },
         {
             name: "Ethers JS",
             icon: ethersjs
@@ -35,6 +40,19 @@ const Skills = () => {
         {
             name: "Hardhat",
             icon: hardhat
+        },        
+        {
+            name: "NPM",
+            icon: npm
+        },
+        {
+            name: "GitHub",
+            icon: github
+        },
+        ,
+        {
+            name: "Figma",
+            icon: figma
         },
         {
             name: "HTML",
@@ -51,6 +69,10 @@ const Skills = () => {
         {
             name: "Reactjs",
             icon: react
+        },
+        {
+            name: "Tailwind css",
+            icon: tailwind
         },
         {
             name: "Bootstrap",
@@ -72,19 +94,6 @@ const Skills = () => {
             name: "Node js",
             icon: nodejs
         },
-        {
-            name: "NPM",
-            icon: npm
-        },
-        {
-            name: "GitHub",
-            icon: github
-        },
-        ,
-        {
-            name: "Figma",
-            icon: figma
-        }
     ]
     return (
         <section id='skills' className='skills' >

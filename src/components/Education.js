@@ -53,34 +53,6 @@ const Education = () => {
         },
     ];
 
-    // const CLG = [
-    //     {
-    //         CourseTitle: 'Bachelors of Computer Application.',
-    //         CollegeTitle: 'Manglore University',
-    //         UniversityImage: mangloreU,
-    //         description: [
-    //             "Filled learning of several programming languages including JAVA, C, python and more..",
-    //             "Included implementation of learnings into problem solving.",
-    //             "Completely enjoyable moments along with learning."
-    //         ],
-    //         marks_certificate: [
-    //             "Present", "Present"
-    //         ]
-    //     },
-    //     {
-    //         CourseTitle: 'II Pre University Course',
-    //         CollegeTitle: 'Banglore University',
-    //         UniversityImage: puboard,
-    //         description: [
-    //             "Filled learning of theoretical aspects such as Business Economics and Accountancy.",
-    //             "Learnt C++ programming & used it for problem solving.",
-    //             "Lot of enjoyment while experimenting with HTML and CSS.",
-    //         ],
-    //         marks_certificate: [
-    //             "97%", ""
-    //         ]
-    //     }
-    // ]
     const CLG = [
         {
         CourseTitle: 'Bachelor of Computer Applications',

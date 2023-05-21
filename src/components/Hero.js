@@ -16,7 +16,7 @@ const Hero = () => {
                 <span className='hero-name'>Vikas kotary</span>
                 <span className='hifhen'> - </span>
                 <span className='hero-services' >Full Stack Developer</span><br />
-                <span className='description' >Passoniate about Creating Beautiful & Scalable web apps from end to end that serve a certain purpose.
+                <span className='description' >Passoniate about Creating Secure, Scalable & Beautiful web3 dapps from end to end that serve a certain purpose.
 
                 </span>
             </section>

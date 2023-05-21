@@ -3,8 +3,7 @@ import "../styles/Projects.css";
 import crypto from "../assets/crypto.png"
 import quicknotes from "../assets/quicknotes.png"
 import resumeBuilder from "../assets/resumebuilder.png"
-import news from "../assets/news.png"
-import BmyS from "../assets/BmyS.png"
+import web3safebridge from "../assets/web3safebridge.png"
 import pillow from "../assets/pillow.png"
 import CrowdFunding from "../assets/crowdFunding.png";
 import scanner from "../assets/0xscanner.png"
@@ -13,6 +12,14 @@ import 'aos/dist/aos.css'
 
 const Projects = () => {
     const projects = [
+        {
+            id: 9,
+            title: 'Web3 Safe Bridge',
+            description: "Web3 powered escrow platform, allows users to experience hassle free escrow transactions esuring security and transparency along with 0% fee.",
+            image: web3safebridge,
+            link: 'https://web3-escrow.netlify.app/',
+            github: 'https://github.com/vikas-viki/Escrow2.0'
+        },
         {
             id: 8,
             title: '0xScanner',
@@ -53,6 +60,7 @@ const Projects = () => {
             link: 'https://resume-builder2022.netlify.app/',
             github: 'https://github.com/vikas-viki/Resume-Builder'
         },
+        /*
         {
             id: 3,
             title: "News App",
@@ -61,6 +69,7 @@ const Projects = () => {
             link: '',
             github: 'https://github.com/vikas-viki/Get-my-news'
         },
+        */
         {
             id: 2,
             title: "Note Maker",
