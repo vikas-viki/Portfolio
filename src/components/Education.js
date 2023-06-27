@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import "../styles/Education.css";
 import hackerrank from "../assets/hackerrank.png"
 import sololearn from "../assets/sololearn.png"
-import almabetter from "../assets/almabetter.png"
+import almabetter from "../assets/almabetter-ico.png"
 import puc from "../assets/puc.png"
 import puboard from "../assets/puBoard.png"
 import mangloreU from "../assets/mangloreU.png"
@@ -15,7 +15,21 @@ const Education = () => {
     }, []);
     const education = [
 
-
+        {
+            title: "Introduction to AWS",
+            image: almabetter,
+            link: 'https://certificates.almabetter.com/en/verify/13391667101924'
+        },
+        {
+            title: 'Data Structures and Algorithms',
+            image: almabetter,
+            link: 'https://certificates.almabetter.com/en/verify/19542648205321'
+        },
+        {
+            title: "Object Oriented Programming",
+            image: almabetter,
+            link: 'https://certificates.almabetter.com/en/verify/53494702117097'
+        },
         {
             title: 'Introduction to Web',
             image: almabetter,
@@ -55,32 +69,32 @@ const Education = () => {
 
     const CLG = [
         {
-        CourseTitle: 'Bachelor of Computer Applications',
-        CollegeTitle: 'Mangalore University',
-        UniversityImage: mangloreU,
-        description: [
-        "Comprehensive learning of several programming languages including Java, C, Python, and more.",
-        "Practical implementation of learned concepts into problem solving.",
-        "Enjoyable moments alongside learning.",
-        ],
-        marks_certificate: [
-        "Present", "Present"
-        ]
+            CourseTitle: 'Bachelor of Computer Applications',
+            CollegeTitle: 'Mangalore University',
+            UniversityImage: mangloreU,
+            description: [
+                "Comprehensive learning of several programming languages including Java, C, Python, and more.",
+                "Practical implementation of learned concepts into problem solving.",
+                "Enjoyable moments alongside learning.",
+            ],
+            marks_certificate: [
+                "Present", "Present"
+            ]
         },
         {
-        CourseTitle: 'II Pre-University Course',
-        CollegeTitle: 'Bangalore University',
-        UniversityImage: puboard,
-        description: [
-        "Thorough understanding of theoretical aspects such as Business Economics and Accountancy.",
-        "Acquired proficiency in C++ programming and applied it to problem solving.",
-        "Experimented with HTML and CSS, resulting in enjoyable experiences.",
-        ],
-        marks_certificate: [
-        "97%", puc
-        ]
+            CourseTitle: 'II Pre-University Course',
+            CollegeTitle: 'Bangalore University',
+            UniversityImage: puboard,
+            description: [
+                "Thorough understanding of theoretical aspects such as Business Economics and Accountancy.",
+                "Acquired proficiency in C++ programming and applied it to problem solving.",
+                "Experimented with HTML and CSS, resulting in enjoyable experiences.",
+            ],
+            marks_certificate: [
+                "97%", puc
+            ]
         }
-        ]
+    ]
 
     return (
         <section id='education' className='educations' >
