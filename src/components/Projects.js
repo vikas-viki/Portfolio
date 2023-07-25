@@ -8,10 +8,19 @@ import pillow from "../assets/pillow.png"
 import CrowdFunding from "../assets/crowdFunding.png";
 import scanner from "../assets/0xscanner.png"
 import AOS from 'aos';
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
+import Welcomint from "../assets/welcomint.png";
 
 const Projects = () => {
     const projects = [
+        {
+            id: 10,
+            title: 'Welcomint',
+            description: "A NFT marketplace offering users diverse functionalities starting from creating, listing for sale, buying to canceling NFTs and more.",
+            image: Welcomint,
+            link: 'https://welcomint.vercel.app/',
+            github: 'https://github.com/vikas-viki/welcomint'
+        },
         {
             id: 9,
             title: 'Web3 Safe Bridge',

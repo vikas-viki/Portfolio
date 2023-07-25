@@ -14,7 +14,7 @@ const Education = () => {
         AOS.init({ duration: 1800 });
     }, []);
     const education = [
-
+        
         {
             title: "Introduction to AWS",
             image: almabetter,
@@ -65,6 +65,17 @@ const Education = () => {
             image: hackerrank,
             link: 'https://www.hackerrank.com/certificates/902c006d1243'
         },
+    ];
+
+    const nfts = [
+        {
+            image: 'https://authoring.metacrafters.io/assets/cms/Group_483384_a4fbdabfef.png',
+            link: 'https://solscan.io/account/2NVDMCk1AoZF7qNW97Eo6dBNSvNF8nVWwGA792X1mDa5'
+        },
+        {
+            image: 'https://authoring.metacrafters.io/assets/cms/Group_483375_f1b416ffb4.png',
+            link: 'https://solscan.io/account/2NVDMCk1AoZF7qNW97Eo6dBNSvNF8nVWwGA792X1mDa5'
+        }
     ];
 
     const CLG = [
@@ -133,6 +144,21 @@ const Education = () => {
                 }
             </div>
             <div className="education-cards">
+            {
+                    nfts.map((education, index) => {
+                        return (
+                            <div className="education" id="nft" data-aos='fade-left' key={index}>
+                                <div className="education-img">
+                                    <img src={education.image} alt={education.title} width='300' style={{ borderRadius: '5px' }} />
+                                </div>
+                                <span className='link'><a href={education.link} target='_blank' >View</a></span>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+            <div className="education-cards">
+                
                 {
                     education.map((education, index) => {
                         return (

@@ -18,16 +18,32 @@ import chainlink from "../assets/chainlink.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import ethersjs from "../assets/ethersjs.png";
-import tailwind from "../assets/tailwindcss.png"
+import tailwind from "../assets/tailwindcss.png";
+import alchemy from "../assets/alchemy.png";
+import pinata from "../assets/pinata.png";
+import opensea from "../assets/opensea.png";
 
 const Skills = () => {
     useEffect(()=>{
         AOS.init({duration: 2000});
     },[]);
     const skills = [
+        
         {
             name: 'Chainlink Oracle',
             icon : chainlink
+        },
+        {
+            name: 'OpenSea SDK',
+            icon : opensea
+        },
+        {
+            name: 'Pinata SDK',
+            icon : pinata
+        },
+        {
+            name: 'Alchemy SDK',
+            icon : alchemy
         },
         {
             name: "Ethers JS",
