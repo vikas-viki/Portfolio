@@ -69,7 +69,7 @@ const Education = () => {
 
     const nfts = [
         {
-            image: 'https://authoring.metacrafters.io/assets/cms/Group_483384_a4fbdabfef.png',
+            image: 'https://authoring.metacrafters.io/assets/cms/Group_483385_e6b65921cf.png',
             link: 'https://solscan.io/account/2NVDMCk1AoZF7qNW97Eo6dBNSvNF8nVWwGA792X1mDa5'
         },
         {
