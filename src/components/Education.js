@@ -1,20 +1,27 @@
-import React, { useEffect } from 'react'
 import "../styles/Education.css";
-import hackerrank from "../assets/hackerrank.png"
-import sololearn from "../assets/sololearn.png"
-import almabetter from "../assets/almabetter-ico.png"
-import puc from "../assets/puc.png"
-import puboard from "../assets/puBoard.png"
-import mangloreU from "../assets/mangloreU.png"
-import AOS from 'aos';
 import 'aos/dist/aos.css'
+
+import React, { useEffect } from 'react'
+
+import AOS from 'aos';
+import almabetter from "../assets/almabetter-ico.png"
+import hackerrank from "../assets/hackerrank.png"
+import mangloreU from "../assets/mangloreU.png"
+import puboard from "../assets/puBoard.png"
+import puc from "../assets/puc.png"
+import sololearn from "../assets/sololearn.png"
+import udemy from "../assets/udemy.png"
 
 const Education = () => {
     useEffect(() => {
         AOS.init({ duration: 1800 });
     }, []);
     const education = [
-        
+        {
+            title: 'Gas Costs Optimization',
+            image: udemy,
+            link: 'https://udemy-certificate.s3.amazonaws.com/image/UC-54c120e0-788f-4b78-96bc-a27ba64abd24.jpg'
+        },
         {
             title: "Introduction to AWS",
             image: almabetter,
@@ -144,7 +151,7 @@ const Education = () => {
                 }
             </div>
             <div className="education-cards">
-            {
+                {
                     nfts.map((education, index) => {
                         return (
                             <div className="education" id="nft" data-aos='fade-left' key={index}>
@@ -158,7 +165,7 @@ const Education = () => {
                 }
             </div>
             <div className="education-cards">
-                
+
                 {
                     education.map((education, index) => {
                         return (
