@@ -1,18 +1,29 @@
-import React, {useEffect} from 'react'
 import "../styles/Projects.css";
+import 'aos/dist/aos.css';
+
+import React, { useEffect } from 'react'
+
+import AOS from 'aos';
+import CrowdFunding from "../assets/crowdFunding.png";
+import Welcomint from "../assets/welcomint.png";
 import crypto from "../assets/crypto.png"
+import pillow from "../assets/pillow.png"
 import quicknotes from "../assets/quicknotes.png"
 import resumeBuilder from "../assets/resumebuilder.png"
-import web3safebridge from "../assets/web3safebridge.png"
-import pillow from "../assets/pillow.png"
-import CrowdFunding from "../assets/crowdFunding.png";
 import scanner from "../assets/0xscanner.png"
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Welcomint from "../assets/welcomint.png";
+import snb from "../assets/snb.png";
+import web3safebridge from "../assets/web3safebridge.png"
 
 const Projects = () => {
     const projects = [
+        {
+            id: 11,
+            title: 'Stake N Bake',
+            description: "A complete POC for a live cross chain farming game, built using Unity & utilized Thirdweb's SDK for transaction and Account abstraction.",
+            image: snb,
+            link: 'https://snbunity.vercel.app/',
+            github: 'https://github.com/bakestake/snbunity'
+        },
         {
             id: 10,
             title: 'Welcomint',
@@ -98,29 +109,29 @@ const Projects = () => {
         },
         */
     ]
-    useEffect(()=>{
-        AOS.init({duration: 2000});
-    },[]);
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
     return (
         <section id='projects' className='projects' >
             <span className='projects-head section-head sec-head'>Projects</span>
             <div className='project-cards'>
-                {   
+                {
                     projects.map((project, index) => {
                         return (
-                                <div className="project" data-aos='zoom-in' key={index}>
-                                    <div className="project-img">
-                                        <img src={project.image} alt={project.title} width='400' height='212'/>
-                                    </div>
-                                    <strong className='project-title'> {project.title} </strong>
-                                    <div className="project-description">
-                                        {project.description}
-                                    </div>
-                                    <span className='link'>
-                                        <a href={project.link} target='_blank' >See live</a>
-                                        <a href={project.github} target='_blank' >GitHub repo</a>
-                                    </span>
+                            <div className="project" data-aos='zoom-in' key={index}>
+                                <div className="project-img">
+                                    <img src={project.image} alt={project.title} width='400' height='212' />
                                 </div>
+                                <strong className='project-title'> {project.title} </strong>
+                                <div className="project-description">
+                                    {project.description}
+                                </div>
+                                <span className='link'>
+                                    <a href={project.link} target='_blank' >{project.link.includes('snbunity') ? 'Play game' : 'See live'}</a>
+                                    <a href={project.github} target='_blank' >GitHub repo</a>
+                                </span>
+                            </div>
                         )
                     })
                 }
